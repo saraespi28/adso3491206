@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01-Emmet</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body class="Emmet">
     <nav class="back">
@@ -15,7 +15,7 @@
     <main>
         <header class="mainmenu internal">
             <h1>01-Emmet</h1>
-            <img src="../src/imgs/logo-emmet.svg" alt="Logo de Emmet">
+            <img src="../img/logo-emmet.svg" alt="Logo de Emmet">
             <h3>Plugin para codificación más rápida en HTML y CSS.</h3>
         </header>
        <section>
@@ -124,7 +124,7 @@
         </h2>
         <h3>Ejemplo:</h3>
         <p>ul>li.num$*3 ↔</p>
-        <p>section>article.sec$$$*3 ↔</p>
+        <p>section>article.sec$$$*3 ↔️</p>
         <h3>Resultado:</h3>
 <xmp><ul>
     <li class="num1"></li>
@@ -140,7 +140,7 @@
         </h2>
         <h3>Ejemplo:</h3>
         <p>ul>li.num$*3 ↔</p>
-        <p>section>article.sec$$$*3 ↔</p>
+        <p>section>article.sec$$$*3 ↔️</p>
         <h3>Resultado:</h3>
 <xmp><ul>
     <li class="num1"></li>
@@ -155,7 +155,7 @@
         <small>Define un número base para secuencias</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>ul>li.num$@3*4 ↔</p>
+        <p>ul>li.num$@3*4 ↔️</p>
         <h3>Resultado:</h3>
 <xmp><ul>
     <li class="num3"></li>
@@ -171,7 +171,7 @@
         <small>Sube un nivel.</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>section>article>div^p ↔</p>
+        <p>section>article>div^p ↔️</p>
         <h3>Resultado:</h3>
 <xmp><section>
     <article>
@@ -186,7 +186,7 @@
         <small>Agrupa elementos juntos.</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>(header>nav)+footer ↔</p>
+        <p>(header>nav)+footer ↔️</p>
         <h3>Resultado:</h3>
 <xmp>
 <header>
@@ -203,7 +203,7 @@
         <small>Genera texto de relleno.</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>lorem5 ↔</p>
+        <p>lorem5 ↔️</p>
         <h3>Resultado:</h3>
 <xmp>
     <p>Lorem ipsum dolor sit amet.</p>
@@ -215,7 +215,7 @@
         <small>Crea varios tipos de documentos HTML.</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>html:5 ↔</p>
+        <p>html:5 ↔️</p>
         <h3>Resultado:</h3>
 <xmp>
 <!DOCTYPE html>
@@ -234,22 +234,46 @@
         <small>Genera texto de relleno.</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>meta:vp ↔</p>
+        <p>meta:vp ↔️</p>
         <h3>Resultado:</h3>
 <xmp>
-    <meta name="viewport" 
+    
 </xmp>
         </section>
          <section>
         <h2 class="subtitle">
             17-Challenge<br>
-        <small>Genera desafíos de Emmet para práctica.</small>
+        <small>Genera desafíos de Emmet para práctica</small>
         </h2>
         <h3>Ejemplo:</h3>
-        <p>meta:vp ↔</p>
+        <p>
+        header#header>nav.navbar.navbar-inverse>div.container>div.navbar-header>button.navbar-toggle[type=button]>span.sr-only{togle navigation}+spa*3.icon-bar+a.navbar-brand[href=index.php]>img[src=imgs/logo.png][alt]^^^(div.collapse>ul.nav.navbar-nav>li>a.link[href=index.html]{Inicio}^(li>a[href=login.html]{ingresar})^(li>a.link[href=registro.html]{regitarse})^(li>a.link[href=contacto.html]{contactanos}))    
+        </p>
         <h3>Resultado:</h3>
-<xmp>
-    <meta name="viewport" 
+<xmp style="font-size:0.5rem">
+<header id="header">
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button">
+                <span class="sr-only">togle navigation</span>
+                <spa class="icon-bar"></spa>
+                <spa class="icon-bar"></spa>
+                <spa class="icon-bar"></spa>
+                <a href="index.php" class="navbar-brand"><img src="imgs/logo.png" alt=""></a>
+            </button>
+        </div>
+        <div class="collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" class="link">Inicio</a></li>
+                <li><a href="login.html">ingresar</a></li>
+            </ul>
+            <li><a href="registro.html" class="link">regitarse</a></li>
+        </div>
+        <li><a href="contacto.html" class="link">contactanos</a></li>
+    </div>
+</nav>
+</header>
 </xmp>
         </section>
     </main>
