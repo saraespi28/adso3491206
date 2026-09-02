@@ -247,33 +247,25 @@
         </h2>
         <h3>Ejemplo:</h3>
         <p>
-        header#header>nav.navbar.navbar-inverse>div.container>div.navbar-header>button.navbar-toggle[type=button]>span.sr-only{togle navigation}+spa*3.icon-bar+a.navbar-brand[href=index.php]>img[src=imgs/logo.png][alt]^^^(div.collapse>ul.nav.navbar-nav>li>a.link[href=index.html]{Inicio}^(li>a[href=login.html]{ingresar})^(li>a.link[href=registro.html]{regitarse})^(li>a.link[href=contacto.html]{contactanos}))    
+        header#header>nav.navbar.navbar-inverse>div.container>(div.navbar-header>(button.navbar-toggle[type=button]>span.sr-only{Toggle navigation}+span.icon-bar*3^a.navbar-brand[href=index.php]>img[src=imgs/logo.png]))+(div.collapse>ul.nav.navbar-nav>(li>a.link[href=index.php]{Inicio})+(li>a.active.link[href=login.html]{Ingresar})+(li>a.link[href=registro.html]{Registrarse})+(li>a.link[href=contacto.html]{Contacto}))  
         </p>
         <h3>Resultado:</h3>
 <xmp style="font-size:0.5rem">
 <header id="header">
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle" type="button">
-                <span class="sr-only">togle navigation</span>
-                <spa class="icon-bar"></spa>
-                <spa class="icon-bar"></spa>
-                <spa class="icon-bar"></spa>
-                <a href="index.php" class="navbar-brand"><img src="imgs/logo.png" alt=""></a>
-            </button>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header"><button class="navbar-toggle" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.php" class="navbar-brand"><img src="imgs/logo.png" alt=""></a></div>
+            <div class="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php" class="link">Inicio</a></li>
+                    <li><a href="login.html" class="active link">Ingresar</a></li>
+                    <li><a href="registro.html" class="link">Registrarse</a></li>
+                    <li><a href="contacto.html" class="link">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html" class="link">Inicio</a></li>
-                <li><a href="login.html">ingresar</a></li>
-            </ul>
-            <li><a href="registro.html" class="link">regitarse</a></li>
-        </div>
-        <li><a href="contacto.html" class="link">contactanos</a></li>
-    </div>
-</nav>
-</header>
+    </nav>
+</header> 
 </xmp>
         </section>
     </main>
