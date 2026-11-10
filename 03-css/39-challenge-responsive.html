@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.4s ease;
+        }
+
+        body {
+            background:linear-gradient(#0a0118d9, #1b0633e6),
+                       url(../img/fondo_jjk.jpg) center/cover fixed no-repeat;
+            font-family: sans-serif;
+        }
+
+        main {
+            width: 1000px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            background: url(../img/logo_jjk.png) no-repeat center;
+            background-size: contain;
+            height: 160px;
+            width: 400px;
+            max-width: 100%;
+            margin: 0 auto 15px;
+        }
+
+        header h1 {
+            color: #d6b3ff;
+            font-size: 2.3rem;
+        }
+
+        .contenedor {
+            max-width: 100%;
+            width: 960px;
+            padding: 20px 70px;
+            margin: 0 auto;
+            cursor: pointer;
+            text-align: center;
+            background: linear-gradient( 135deg,#2a0a44ee,#12001fe6);
+            border: 2px solid #8e1c3c;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #0009;
+            margin-bottom: 30px;
+        }
+
+        .carta {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 185px;
+            margin: 10px;
+            background-color: #120018;
+            border: 2px solid #8e1c3c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #0009;
+        }
+
+        .carta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px #b3123a99;
+        }
+
+        .carta img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .etiqueta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 5px;
+            background-color: #2a0a44dd;
+            color: #e6d4ff;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .bloque {
+            margin-bottom: 25px;
+            padding: 30px;
+            background-color: #1c0426cc;
+            border: 1px solid #8e1c3c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #0006;
+        }
+
+        .bloque img {
+            float: left;
+            width: 180px;
+            height: 185px;
+            object-fit: cover;
+            margin-right: 25px;
+            border-radius: 12px;
+            border: 3px solid #8e1c3c;
+        }
+        .descripcion {
+            overflow: hidden;
+            font-size: 1rem;
+            color: #e9e0f5;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .descripcion h2 {
+            color: #d6b3ff;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 1023px) {
+            main {
+                width: 700px;
+            }
+
+            .contenedor {
+                width: 100%;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            main {
+                width: 100%;
+                padding: 10px;
+            }
+
+            header {
+                padding: 15px 5px;
+            }
+
+            .logo {
+                width: 100%;
+                height: 220px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.8rem;
+            }
+
+            .contenedor {
+                width: 100%;
+                padding: 25px 10px;
+                text-align: center;
+            }
+
+            .carta {
+                width: 200px;
+                margin: 10px auto;
+            }
+
+            .carta img {
+                height: 220px;
+            }
+
+            .bloque {
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .bloque img {
+                float: none;
+                display: block;
+                width: 180px;
+                height: 180px;
+                margin: 0 auto 20px;
+            }
+
+            .descripcion {
+                font-size: 0.9rem;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .descripcion h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <header>
+
+        <figure class="logo"></figure>
+
+    </header>
+
+    <div class="contenedor">
+
+        <div class="carta">
+            <img src="../img/choso.jpg" alt="choso">
+            <div class="etiqueta">Choso</div>
+        </div>
+
+        <div class="carta">
+            <img src="../img/gojo.jpg" alt="gojo">
+            <div class="etiqueta">Gojo</div>
+        </div>
+
+        <div class="carta">
+            <img src="../img/megumi.jpg" alt="megumi">
+            <div class="etiqueta">Megumi</div>
+        </div>
+
+        <div class="carta">
+            <img src="../img/sukuna.png" alt="sukuna">
+            <div class="etiqueta">Sukuna</div>
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../img/choso.jpg" alt="choso">
+
+        <div class="descripcion">
+            <h2>Choso</h2>
+
+            Choso es un espíritu maldito encarnado de grado especial del anime Jujutsu Kaisen, conocido por ser el mayor de los 
+            Úteros Malditos: Pinturas de la Muerte. 
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../img/gojo.jpg" alt="gojo">
+
+        <div class="descripcion">
+            <h2>gojo</h2>
+              Es un hechicero de grado especial el rango más alto y es reconocido universalmente como el más fuerte del mundo, 
+              además de ser profesor en la Escuela Superior de Jujutsu de Tokio.
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../img/megumi.jpg" alt="megumi">
+
+        <div class="descripcion">
+            <h2>Megumi</h2>
+
+            Es un estudiante de primer año en el Colegio Técnico de Magia Metropolitana de Tokio,
+             compañero de equipo de Yuji Itadori y Nobara Kugisaki, bajo la tutela de Satoru Gojo
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../img/sukuna.png" alt="sukuna">
+
+        <div class="descripcion">
+            <h2>Sukuna</h2>
+
+            conocido como el Rey de las Maldiciones,Hace más de mil años fue un hechicero humano temido por su inmenso poder y crueldad,
+            cuyo espíritu quedó sellado tras su muerte en 20 dedos indestructibles clasificados como objetos malditos de grado especial.
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
